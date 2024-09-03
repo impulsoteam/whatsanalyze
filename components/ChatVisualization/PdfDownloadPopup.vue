@@ -30,8 +30,8 @@
       ></v-progress-linear>
     </v-row>
 
-    <v-dialog v-model="showDownloadPopup" width="550">
-      <template>
+    <!-- <v-dialog v-model="showDownloadPopup" width="550">
+      <template #activator="{ on, attrs }"> -->
         <v-row class="pa-0 ma-0" justify="center">
           <v-col class="pa-0 ma-0">
             <v-btn elevation="10" @click="downloadSample">
@@ -71,7 +71,7 @@
             </v-col> -->
           </v-col>
         </v-row>
-      </template>
+      <!-- </template>
       <v-card>
         <v-card-title class="headline cyan" style="word-break: normal">
           <div class="text-h4 font-weight-bold">Nice !!</div>
@@ -84,13 +84,13 @@
         <div v-if="isLoading" class="loading mb-2" />
 
         <v-row align="center" class="pt-6 pr-10" cols="12" justify="center">
-          <!-- <ChatVisualizationPayment
+          <ChatVisualizationPayment
             :amount="price"
             :currency="currency"
             @onApprove="onApprove"
             @onCreateOrder="onCreateOrder"
             @onError="onError"
-          /> -->
+          />
         </v-row>
         <v-divider></v-divider>
         <v-card-actions>
@@ -100,7 +100,7 @@
           </v-btn>
         </v-card-actions>
       </v-card>
-    </v-dialog>
+    </v-dialog> -->
   </div>
 </template>
 <script>
