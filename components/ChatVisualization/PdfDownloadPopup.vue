@@ -31,18 +31,18 @@
     </v-row>
 
     <v-dialog v-model="showDownloadPopup" width="550">
-      <template #activator="{ on, attrs }">
+      <template>
         <v-row class="pa-0 ma-0" justify="center">
           <v-col class="pa-0 ma-0">
             <v-btn elevation="10" @click="downloadSample">
               <v-icon class="mr-1">mdi-download</v-icon>
-              <span><b>free</b> preview PDF</span>
+              <span><b>sample</b> preview PDF</span>
             </v-btn>
-            <v-col class="mt-2">
+            <!-- <v-col class="mt-2">
               <v-row align="center" justify="center">
                 <b style="color: green">{{ 0 + " " + currency }}</b>
               </v-row>
-            </v-col>
+            </v-col> -->
           </v-col>
           <v-col class="pa-0 ma-0">
             <v-btn
@@ -50,14 +50,12 @@
               dark
               elevation="10"
               style="max-width: 100%"
-              v-bind="attrs"
-              @click="gtagEvent('full_pdf_pressed', GTAG_PAYMENT)"
-              v-on="on"
+              @click="downloadFull"
             >
               <v-icon class="mr-1">mdi-download</v-icon>
               <span><b>full</b> chat PDF</span>
             </v-btn>
-            <v-col class="mt-2">
+            <!-- <v-col class="mt-2">
               <v-row align="center" justify="center">
                 <b style="color: green">{{ price + " " + currency }}</b>
                 <span
@@ -70,7 +68,7 @@
               <v-row align="center" justify="center">
                 <s style="color: grey">{{ 15 + " " + currency }}</s>
               </v-row>
-            </v-col>
+            </v-col> -->
           </v-col>
         </v-row>
       </template>
@@ -86,13 +84,13 @@
         <div v-if="isLoading" class="loading mb-2" />
 
         <v-row align="center" class="pt-6 pr-10" cols="12" justify="center">
-          <ChatVisualizationPayment
+          <!-- <ChatVisualizationPayment
             :amount="price"
             :currency="currency"
             @onApprove="onApprove"
             @onCreateOrder="onCreateOrder"
             @onError="onError"
-          />
+          /> -->
         </v-row>
         <v-divider></v-divider>
         <v-card-actions>

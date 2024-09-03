@@ -49,13 +49,13 @@ export default {
   },
   pwa: {
     manifest: {
-      name: "WhatsAnalyze - The WhatsApp Chat Analyzer",
-      short_name: "WhatsAnalyze",
+      name: "WhatsAnalyzeImpulso - The WhatsApp Chat Analyzer",
+      short_name: "WhatsAnalyzeImpulso",
       start_url: "/",
       display: "standalone",
       background_color: "#21a68d",
       theme_color: "#000000",
-      lang: "en",
+      lang: "pt",
       useWebmanifestExtension: true,
       share_target: {
         action: "/pwa-results?share-target=1",
