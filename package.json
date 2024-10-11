@@ -36,7 +36,7 @@
     "chart.js": "^2.9.4",
     "core-js": "^3.35.0",
     "country-currency-map": "^2.1.7",
-    "dompurify": "^2.4.7",
+    "dompurify": "^2.5.4",
     "emoji-aware": "^3.1.0",
     "file-saver": "^2.0.5",
     "firebase": "^8.10.1",
